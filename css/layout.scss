@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix */
+.ba-cf:before,
+.ba-cf:after {
+    content: '';
+    display: table;
+}
+
+.ba-cf:after {
+    clear: both;
+}
+
+/* hack for IE 6/7 */
+.ba-cf {
+    *zoom: 1;
+}
+
+.ba-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.ba-text-right {
+    text-align: right;
+}
+
+.ba-text-left {
+    text-align: left;
+}
+
+.ba-text-center {
+    text-align: center;
+}
+
+.ba-right {
+    float: right;
+}
+
+.ba-left {
+    float: left;
+}
+
+/* Ba grid */
+.ba-grid:before,
+.ba-grid:after {
+    content: '';
+    display: table;
+}
+
+.ba-grid:after {
+    clear: both;
+}
+
+.ba-grid {
+    *zoom: 1;
+}
+
+.ba-grid{
+    margin: 0 -15px;
+}
+
+.ba-grid + .ba-grid{
+    margin-top: 30px;
+}
+
+.ba-grid > [class*="ba-col-"] {
+    padding: 0 15px;
+}
+
+[class*="ba-col-"] {
+    float: left;
+}
+
+/* Ba columns */
+
+.ba-col-12 {
+    width: 100%;
+}
+
+.ba-col-11 {
+    width: 91.667%;
+}
+
+.ba-col-10 {
+    width: 83.334%;
+}
+
+.ba-col-9 {
+    width: 75%;
+}
+
+.ba-col-8 {
+    width: 66.667%;
+}
+
+.ba-col-7 {
+    width: 58.33333333%;
+}
+
+.ba-col-6 {
+    width: 50%;
+}
+
+.ba-col-5 {
+    width: 41.66666667%;
+}
+
+.ba-col-4 {
+    width: 33.334%;
+}
+
+.ba-col-3 {
+    width: 25%;
+}
+
+.ba-col-2 {
+    width: 16.667%;
+}
+
+.ba-col-1 {
+    width: 8.333%;
+}
